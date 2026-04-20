@@ -100,7 +100,7 @@
             // 4. 检查是否有 code 参数（核心参数）
             if (code !== null && code !== '') {
                 // 构建重定向 URL
-                let redirectUrl = BUSINESS_BASE_URL + '/face/result?code=' + encodeURIComponent(code);
+                let redirectUrl = BUSINESS_BASE_URL + '/face/callback?code=' + encodeURIComponent(code);
                 
                 // 附加其他参数（如果有）
                 if (bizToken) redirectUrl += '&bizToken=' + encodeURIComponent(bizToken);
